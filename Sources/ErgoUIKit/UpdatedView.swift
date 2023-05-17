@@ -1,10 +1,13 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
-import Layoutless
+import UIKit
 import WorkflowUI
 
-public protocol Layoutable {
+public protocol UpdatedView: UIView {
 	associatedtype Screen: WorkflowUI.Screen
 
-	func layout(with screen: some ScreenProxy<Screen>) -> AnyLayout
+	init(screen: Screen)
+
+	func update(with screen: Screen)
 }
+

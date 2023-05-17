@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Ergo",
+    name: "ErgoUIKit",
     platforms: [
         .iOS(.v16)
     ],
