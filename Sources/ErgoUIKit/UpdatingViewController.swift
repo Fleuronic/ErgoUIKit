@@ -3,7 +3,7 @@
 import UIKit
 import WorkflowUI
 
-class UpdatedViewController<View: UpdatedView>: ScreenViewController<View.Screen> {
+class UpdatingViewController<View: UIView & Updating>: ScreenViewController<View.Screen> {
 	private let contentView: View
 
 	// MARK: UIViewController

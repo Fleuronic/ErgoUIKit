@@ -5,19 +5,19 @@ import WorkflowUI
 import Layoutless
 import Inject
 
-public protocol UpdatedScreen: Screen where View.Screen == Self {
-	associatedtype View: UpdatedView
+public protocol UpdatingScreen: Screen where View.Screen == Self {
+	associatedtype View: UIView & Updating
 	associatedtype Strings = String
 }
 
 // MARK: -
-public extension UpdatedScreen {
+public extension UpdatingScreen {
 	typealias ScreenString = (Strings.Type) -> String
 
 	// MARK: Screen
 	func viewControllerDescription(environment: ViewEnvironment) -> ViewControllerDescription {
 		.init(
-			type: Inject.ViewControllerHost<UpdatedViewController<View>>.self,
+			type: Inject.ViewControllerHost<UpdatingViewController<View>>.self,
 			build: { .init(.init(screen: self, environment: environment)) },
 			update: { $0.instance.update(screen: self, environment: environment) }
 		)
