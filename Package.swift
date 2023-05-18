@@ -14,16 +14,14 @@ let package = Package(
     ],
     dependencies: [
 		.package(url: "https://github.com/Fleuronic/Ergo", branch: "main"),
-		.package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", branch: "swift-concurrency"),
-		.package(url: "https://github.com/ReactiveCocoa/ReactiveCocoa", from: "12.0.0"),
+		.package(url: "https://github.com/Fleuronic/Inject", branch: "main")
     ],
     targets: [
 		.target(
 			name: "ErgoUIKit",
 			dependencies: [
 				"Ergo",
-				"ReactiveSwift",
-				"ReactiveCocoa"
+				"Inject"
 			]
 		)
     ]
