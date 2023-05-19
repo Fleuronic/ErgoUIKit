@@ -3,9 +3,9 @@
 import UIKit
 import WorkflowUI
 
-public protocol Updating {
-	associatedtype Screen: WorkflowUI.Screen
+import protocol Ergo.ScreenBacked
 
+public protocol Updating: ScreenBacked {
 	init(screen: Screen)
 
 	func update(with screen: Screen)

@@ -2,8 +2,9 @@
 
 import UIKit
 import WorkflowUI
-import Layoutless
 import Inject
+
+import protocol Ergo.ScreenBacked
 
 public protocol UpdatingScreen: Screen where View.Screen == Self {
 	associatedtype View: UIView & Updating
@@ -23,4 +24,3 @@ public extension UpdatingScreen {
 		)
 	}
 }
-
