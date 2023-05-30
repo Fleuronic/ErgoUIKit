@@ -16,6 +16,10 @@ public extension UIView {
 		try XCTUnwrap(index < subviews.count ? subviews[index] as? UIButton : nil)
 	}
 
+	func activityIndicatorView(_ index: Int = 0) throws -> UIActivityIndicatorView {
+		try XCTUnwrap(index < subviews.count ? subviews[index] as? UIActivityIndicatorView : nil)
+	}
+
 	func stackView(_ index: Int = 0) throws -> UIStackView {
 		try XCTUnwrap(index < subviews.count ? subviews[index] as? UIStackView : nil)
 	}
