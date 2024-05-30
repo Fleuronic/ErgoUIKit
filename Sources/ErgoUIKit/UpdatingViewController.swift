@@ -2,6 +2,7 @@
 
 import UIKit
 import WorkflowUI
+import ViewEnvironment
 
 class UpdatingViewController<View: UIView & Updating>: ScreenViewController<View.Screen> {
 	private let contentView: View
