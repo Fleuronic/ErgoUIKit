@@ -15,7 +15,7 @@
       "location" : "https://github.com/Fleuronic/Ergo",
       "state" : {
         "branch" : "main",
-        "revision" : "b77ab8311c881ddef89140337f029a0d44f62ded"
+        "revision" : "051257fff8f697b66fc7635c1f039a73e31eaf3b"
       }
     },
     {
@@ -60,7 +60,7 @@
       "location" : "https://github.com/Fleuronic/workflow-swift",
       "state" : {
         "branch" : "main",
-        "revision" : "e6798d9e5c5fdf890fbdcdd59deaeb93257dc7d8"
+        "revision" : "076618bfdaa1acbe48dfce5842ba939e1a77b232"
       }
     }
   ],
