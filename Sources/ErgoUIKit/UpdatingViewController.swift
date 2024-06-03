@@ -1,8 +1,10 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
-import UIKit
-import WorkflowUI
 import ViewEnvironment
+
+import class UIKit.UIView
+import class UIKit.NSLayoutConstraint
+import class WorkflowUI.ScreenViewController
 
 class UpdatingViewController<View: UIView & Updating>: ScreenViewController<View.Screen> {
 	private let contentView: View

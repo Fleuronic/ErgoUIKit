@@ -1,10 +1,11 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
-import UIKit
-import WorkflowUI
-import ViewEnvironment
 import Inject
+import ViewEnvironment
 
+import struct WorkflowUI.ViewControllerDescription
+import class UIKit.UIView
+import protocol WorkflowUI.Screen
 import protocol Ergo.ScreenBacked
 
 public protocol UpdatingScreen: Screen where View.Screen == Self {
